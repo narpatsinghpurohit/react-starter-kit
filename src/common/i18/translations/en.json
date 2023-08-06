@@ -1,0 +1,10 @@
+{
+    "Home":{
+        "title":"Home Page",
+        "emailPlaceholder":"Enter Email Address",
+        "emailLabel":"Email Address"
+    },
+    "common":{
+        "submit":"Submit"
+    }
+}

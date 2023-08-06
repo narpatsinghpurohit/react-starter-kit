@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import './App.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import routes from './routes';
+import './common/i18/i18';
 
 function App() {
+  const location = useLocation();
+  const navigate = useNavigate();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToastContainer
+        autoClose={2000}
+        position="top-right"
+        className="toast-container"
+        toastClassName="dark-toast"
+      />
+      <Routes>
+        {
+          Object.keys(routes).map(route => {
+            const currentRoute = routes[route];
+            const Component = currentRoute.component;
+            return (
+              <Route
+                key={currentRoute.path}
+                path={currentRoute.path}
+                element={<Component location={location} navigate={navigate} />}
+              />
+            );
+          })
+        }
+      </Routes>
     </div>
   );
 }
