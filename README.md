@@ -5,54 +5,54 @@ This starter kit contains code structure that will standardise the code.
 
 
 ## Directory Structure
-src
-├── common - this folder will contain common configurations.
-│   ├── i18 - i18next configuration for language translation
-│   │   ├── translations
-│   │   │   └── en.json
-│   │   └── i18.ts
-│   └── utilities
-│       ├── LayoutWrapper - LayoutWrapper for using multiple layouts with pages
-│       │   └── withLayout.tsx - withLayout HOC 
-│       └── toolkit.ts - common util funtion such as generating random string
-├── components - this directory will contain all the reusable components
-│   ├── Button - Example for a button
-│   │   └── OutlinedButton.tsx
-│   └── Header - Example of Common Header
-│       ├── Header.styles.ts
-│       └── Header.tsx
-├── layouts - this directory will contains all the layouts that will be used 
-│   └── MainLayout.tsx - Example layout
-├── pages - All the pages will be defined inside this, same will be the routes
-│   ├── Home - Home Page
-│   │   ├── assets.ts - all the asset will be exported from this file
-│   │   ├── config.js - all the configuration such as apiEndpoints, api types, etc will be defined here
-│   │   ├── HomeController.tsx - All the business logic will be defined in this hook, including states, props, funtions, etc...
-│   │   ├── Home.styles.ts - style will be defined inside this(mui v5 sx style example used in this)
-│   │   └── Home.tsx - Main View file that will contain only the TSX or view elements
-│   ├── Login - Example Route
-│   │   ├── assets.ts
-│   │   ├── config.js
-│   │   ├── LoginController.ts
-│   │   ├── Login.styles.ts
-│   │   └── Login.tsx
-│   └── SignUp - Example Route
-│       ├── assets.ts
-│       ├── config.js
-│       ├── SignUpController.ts
-│       ├── SignUp.styles.ts
-│       └── SignUp.tsx
-├── App.css
-├── App.test.tsx
-├── App.tsx 
-├── index.css
-├── index.tsx
-├── logo.svg
-├── react-app-env.d.ts
-├── reportWebVitals.ts
-├── routes.tsx - all routes will be defined here
-├── setupTests.ts
-└── WebRouteGenerator.js - WIP
+- src
+- ├── common - this folder will contain common configurations.
+- │   ├── i18 - i18next configuration for language translation
+- │   │   ├── translations
+- │   │   │   └── en.json
+- │   │   └── i18.ts
+- │   └── utilities
+- │       ├── LayoutWrapper - LayoutWrapper for using multiple layouts with pages
+- │       │   └── withLayout.tsx - withLayout HOC 
+- │       └── toolkit.ts - common util funtion such as generating random string
+- ├── components - this directory will contain all the reusable components
+- │   ├── Button - Example for a button
+- │   │   └── OutlinedButton.tsx
+- │   └── Header - Example of Common Header
+- │       ├── Header.styles.ts
+- │       └── Header.tsx
+- ├── layouts - this directory will contains all the layouts that will be used 
+- │   └── MainLayout.tsx - Example layout
+- ├── pages - All the pages will be defined inside this, same will be the routes
+- │   ├── Home - Home Page
+- │   │   ├── assets.ts - all the asset will be exported from this file
+- │   │   ├── config.js - all the configuration such as apiEndpoints, api types, etc will be defined here
+- │   │   ├── HomeController.tsx - All the business logic will be defined in this hook, including states, props, funtions, etc...
+- │   │   ├── Home.styles.ts - style will be defined inside this(mui v5 sx style example used in this)
+- │   │   └── Home.tsx - Main View file that will contain only the TSX or view elements
+- │   ├── Login - Example Route
+- │   │   ├── assets.ts
+- │   │   ├── config.js
+- │   │   ├── LoginController.ts
+- │   │   ├── Login.styles.ts
+- │   │   └── Login.tsx
+- │   └── SignUp - Example Route
+- │       ├── assets.ts
+- │       ├── config.js
+- │       ├── SignUpController.ts
+- │       ├── SignUp.styles.ts
+- │       └── SignUp.tsx
+- ├── App.css
+- ├── App.test.tsx
+- ├── App.tsx 
+- ├── index.css
+- ├── index.tsx
+- ├── logo.svg
+- ├── react-app-env.d.ts
+- ├── reportWebVitals.ts
+- ├── routes.tsx - all routes will be defined here
+- ├── setupTests.ts
+- └── WebRouteGenerator.js - WIP
 
 
 # Getting Started with Create React App
