@@ -55,6 +55,16 @@ This starter kit contains code structure that will standardise the code.
 - └── WebRouteGenerator.js - WIP
 
 
+## Creating New Page with CLI
+- added script that will generate a new page with all the files with example code
+- to create new page use the following command
+- npm run generate-page [PageName]
+- page name should be in CamelCase
+
+## Upcomming feature
+- Creating component(Component.tsx and styles.ts) with CLI
+- Auto add route when creating Page
+- Login and SignUp Page
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
